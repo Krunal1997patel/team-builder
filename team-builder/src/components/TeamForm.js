@@ -32,7 +32,10 @@ const TeamForm = props =>{
                 name='name'
                 value={team.name}
                 onChange={changeHandler}
+                required
             />
+
+            <br/>
 
             <label htmlFor='email'>Email</label>
             <input 
@@ -43,14 +46,18 @@ const TeamForm = props =>{
                 onChange={changeHandler}
             />
 
-            <label htmlFor='role'>Your Role</label>
+            <br/>
+
+            <label htmlFor='role'>Role</label>
             <input 
                 type='text'
-                placeholder='Role'
+                placeholder='Job Role'
                 name='role'
                 value={team.role}
                 onChange={changeHandler}
             />
+
+            <br/>
 
             <button type='submit'>Join The Team</button>
 

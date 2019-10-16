@@ -9,7 +9,7 @@ function App() {
   const [info, setInfo] = useState([]);
 
   const addNewMember = teamInfo =>{
-    setInfo([...info, teamInfo])
+    setInfo([teamInfo, ...info ])
   }
 
 
